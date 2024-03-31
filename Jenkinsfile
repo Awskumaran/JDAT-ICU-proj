@@ -20,7 +20,7 @@ pipeline {
       steps{
         script {
           sh "echo $USER"
-          sh "docker login -u kumaran96 -p dckr_pat_8r7ctutEVePSfi7dkXrC-m8CeSM"
+          sh "docker login -u kumaran96 -p Naveen@96"
           sh "docker push kumaran96/my-image:latest"
           }
         }
