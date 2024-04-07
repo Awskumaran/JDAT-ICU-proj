@@ -12,7 +12,7 @@ pipeline {
     stage('Building Docker Image') {
       steps{
         script {
-          sh "docker build -t kumaran96/my-image1:latest ."
+          sh "docker build -t username/imagename:latest ."
         }
       }
     }
@@ -20,8 +20,8 @@ pipeline {
       steps{
         script {
           sh "echo $USER"
-          sh "docker login -u kumaran96 -p Naveen@96"
-          sh "docker push kumaran96/my-image1:latest"
+          sh "docker login -u username -p password"
+          sh "docker push username/imagename:latest"
           }
         }
       }
